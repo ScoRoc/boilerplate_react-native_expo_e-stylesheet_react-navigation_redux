@@ -13,21 +13,27 @@ export default MainScreen = props => {
   // console.log('tester: ', props.tester);
   return (
     <View style={styles.screen}>
-      <Text style={styles.text}>Hello from MainScreen</Text>
-      <Button title='to IAP' onPress={() => props.navigation.navigate('IAP')} />
-      <Dummy />
+      <Dummy color='Blue' bgColor='Pink' />
+      <View>
+        <Text style={styles.text}>Hello from MainScreen</Text>
+        <Button title='to IAP' onPress={() => props.navigation.navigate('IAP')} />
+      </View>
+      <Dummy color='Pink' bgColor='Blue' />
     </View>
   )
 };
 
 const styles = EStyleSheet.create({
+  $padding: '50rem',
   screen: {
+    paddingTop: '$padding',
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#3fa'
+    backgroundColor: '#333'
   },
   text: {
+    color: '$pink',
     fontSize: '22rem'
   }
 });

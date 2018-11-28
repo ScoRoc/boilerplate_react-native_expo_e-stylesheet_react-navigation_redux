@@ -26,7 +26,10 @@ const baseScreenWidth = 375; // from iPhoneX vertical
 
 EStyleSheet.build({
   $rem: width / baseScreenWidth,
-  $orange: '#ff8e18'
+  $orange: '#ff8e18',
+  $darkGray: '#333',
+  $pink: '#f3a',
+  $brightBlue: '#3ee'
 });
 
 // export default createAppContainer(RootStack);
