@@ -9,6 +9,7 @@ import store from './src/redux/store/store';
 import MainScreen from './src/screens/MainScreen';
 import IAPScreen from './src/screens/IAPScreen';
 
+// move all navigation into its own file/foler for organization
 const RootStack = createStackNavigator(
   {
     Main: MainScreen,
